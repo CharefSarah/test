@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Mabry";
+    src: url("../fonts/mabry-regular-pro.ttf") format("TrueType");
+
+}
+@font-face {
+    font-family: "Lacoste";
+    src: url("../fonts/Lacoste\ Celtic.otf") format("OpenType");
+
+}
+@font-face {
+    font-family: "Mighty";
+    src: url("../fonts/MightybagherdemoRegular.otf") format("OpenType");
+
+}
+@font-face {
+    font-family: "Isenheim";
+    src: url("../fonts/fonts/OpenType-PS/Isenheim_Fin.otf") format("OpenType");
+
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: #CECECE;
+    color: #262626;
+    font-family: "Mabry";
+    font-weight: 400;
+
+}
+
+nav {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+nav h1 {
+    width: 90%;
+    padding-left: 2rem;
+}
+
+
+.menu-icon {
+    margin: 20px auto;
+    width: 60px;
+    height: 14px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.menu-icon span {
+    background-color: black;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.menu-icon span:first-child {
+    top: 0;
+}
+
+.menu-icon span:last-child {
+    top: 12px;
+}
+
+.menu-icon:hover span:first-child,
+.menu-icon:hover span:last-child {
+    top: 6px;
+    background-color: black;
+}
+
+.menu-icon:hover span:first-child {
+    transform: rotate(45deg);
+}
+
+.menu-icon:hover span:last-child {
+    transform: rotate(-45deg);
+}
+
+.items_header{
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 10%);
+
+}
+.col_left{
+    height: 100%;
+    width: 65%;
+    padding-top: 3.5rem;
+    padding-inline: 3rem;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.col_right{
+    width:35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 3.5rem;
+    padding-inline: 2.5rem;
+ }
+h1{
+    font-family: "Lacoste";
+    Font-size: 30px;
+    letter-spacing: 0.2rem;
+}
+h2{
+    font-size:120px;
+    font-family: "Lacoste";
+    font-weight: 500;
+}
+h3{
+    font-size: 20px;
+    font-family: "Isenheim";
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+
+h2:first-child{
+    margin-top: 1rem;
+    
+}
+.title_anim{
+    font-size: 100px;
+    margin-bottom: 1rem;
+}
+
+
+.highlight{
+    color: #FBF8F8;
+    font-family: "Mighty";
+}
+
+.text_anim{
+    display: inline-block;
+}
+
+
+
+
+.buttons_header button{
+    margin-top: 1.5rem ;
+    padding: 0.8rem  4rem;
+    border: none;
+    margin-right: 1rem;
+    border-radius: 500px;
+    font-size: 20px;
+}
+
+.buttons_header button:last-child{
+    background-color: transparent;
+    border: #262626 2px solid;
+}
+
+.image_projet {
+    height: 18rem;
+    background-color: grey;
+    margin-bottom:1.5rem;
+    border-radius: 3rem;
+
+}
+.quote{
+    margin-top: 3.5rem ;
+    text-align: right;
+    font-size: 25px;
+}
+.quote p:last-child{
+    margin-top: 1rem ;
+    font-size: 20px;
+}
+
